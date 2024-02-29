@@ -50,10 +50,10 @@ const Weather = () => {
   };
 
   return (
-    <Container fluid className="weather-container">
+    <Container fluid className="weather-container ">
       <Row className="justify-content-center">
         <Col xs={12} md={6}>
-          <div className="weather-card">
+          <div className="weather-card bg-dark text-white">
             <h1 className="text-center mb-4">Weather App</h1>
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3">
@@ -80,7 +80,7 @@ const Weather = () => {
       {weatherData && (
         <Row className="justify-content-center mt-4">
           <Col xs={12} md={6}>
-            <Card className="weather-data-card">
+            <Card className="weather-data-card bg-dark text-white">
               <Card.Body>
                 <h2 className="text-center">
                   {weatherData.name}, {countryName} {/* Display country name */}

@@ -2,7 +2,7 @@ import Weather from "./components/Weather";
 
 const App = () => {
   return (
-    <div>
+    <div className="app bg-light">
       <Weather />
     </div>
   );
